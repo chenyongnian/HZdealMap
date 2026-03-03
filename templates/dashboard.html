@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>杭州楼盘成交可视化</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div id="app">
+  <div id="map"></div>
+  <aside id="panel">
+    <div class="title">杭州楼盘成交实时看板</div>
+    <div class="hint">这是动态页面：首屏由服务端渲染，随后前端会轮询最新汇总并支持鼠标联动查询。</div>
+
+    <div class="summary card">
+      <div><b>楼盘数量：</b><span id="sumProjects">-</span></div>
+      <div><b>当月总成交：</b><span id="sumMonth">-</span></div>
+      <div><b>当季度总成交：</b><span id="sumQuarter">-</span></div>
+      <div><b>当年总成交：</b><span id="sumYear">-</span></div>
+      <div class="footer">汇总更新时间：<span id="sumUpdated">-</span></div>
+    </div>
+
+    <div class="card" id="info">等待鼠标悬浮地图...</div>
+    <div class="footer">数据源可通过 <code>POST /api/sync-source</code> 更新，页面会自动拉取最新汇总。</div>
+  </aside>
+</div>
+
+<script>
+  window.__INITIAL_PROJECTS__ = __INITIAL_PROJECTS__;
+  window.__INITIAL_SUMMARY__ = __INITIAL_SUMMARY__;
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "name": "滨江壹号院",
+      "district": "滨江区",
+      "lat": 30.2089,
+      "lng": 120.2123,
+      "monthly_deals": 38,
+      "quarterly_deals": 105,
+      "yearly_deals": 402
+    },
+    {
+      "name": "申花云邸",
+      "district": "拱墅区",
+      "lat": 30.3175,
+      "lng": 120.1151,
+      "monthly_deals": 27,
+      "quarterly_deals": 86,
+      "yearly_deals": 350
+    },
+    {
+      "name": "未来科技城天街府",
+      "district": "余杭区",
+      "lat": 30.2799,
+      "lng": 120.0283,
+      "monthly_deals": 44,
+      "quarterly_deals": 132,
+      "yearly_deals": 500
+    },
+    {
+      "name": "钱江世纪城观澜府",
+      "district": "萧山区",
+      "lat": 30.2418,
+      "lng": 120.2372,
+      "monthly_deals": 33,
+      "quarterly_deals": 98,
+      "yearly_deals": 389
+    },
+    {
+      "name": "之江玺园",
+      "district": "西湖区",
+      "lat": 30.1902,
+      "lng": 120.0817,
+      "monthly_deals": 21,
+      "quarterly_deals": 71,
+      "yearly_deals": 290
+    }
+  ]
+}
